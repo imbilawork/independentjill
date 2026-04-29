@@ -307,6 +307,37 @@
     line-height: 1.65;
   }
 
+  /* ── Overview ── */
+  .overview { background: var(--purple-wash); }
+  .overview-body { max-width: 880px; }
+  .overview-body p {
+    font-family: var(--body-serif);
+    font-size: 18px;
+    color: var(--charcoal);
+    line-height: 1.85;
+    margin-bottom: 22px;
+  }
+  .overview-body h3 {
+    font-family: var(--display);
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--purple-deep);
+    margin-top: 40px;
+    margin-bottom: 16px;
+    padding-top: 28px;
+    border-top: 1px solid var(--purple-mist);
+    position: relative;
+  }
+  .overview-body h3::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 48px;
+    height: 2px;
+    background: var(--gold-primary);
+  }
+
   /* ── Services ── */
   .services { background: var(--cream); }
   .service-grid {
@@ -624,6 +655,7 @@
     <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">Menu</button>
     <div class="nav-links">
       <a href="#about">About</a>
+      <a href="#overview">Overview</a>
       <a href="#services">Services</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
@@ -682,7 +714,7 @@
 
     <div class="about-grid">
       <div class="about-copy">
-        <p>Jill Murtagh began her banking career as a junior clerk at Barclays South Africa at the age of 18. Over the next four decades, she worked her way through five major South African banks — FNB, ABSA, Mercantile, and ultimately Bidvest Bank, where she served 23 years as Executive Head of Payments and Banking Operations.</p>
+        <p>Jill Murtagh began her banking career at Barclays South Africa at the age of 18. Over the next four decades, she worked her way through five major South African banks — FNB, ABSA, Mercantile, and ultimately Bidvest Bank, where she served 23 years as Executive Head of Payments and Banking Operations.</p>
         <p>At Bidvest, Jill was instrumental in the institution's transformation from a Bureau de Change into a fully-fledged bank. She built the entire banking and treasury operations infrastructure from the ground up — setting up SA's local payment rails (RTGS, ACH, SWIFT local clearing) and establishing the cross-border payment infrastructure that would serve the bank's corporate and retail clients.</p>
         <p>Today, as an independent consultant, trainer and certified life and business coach, Jill brings that rare combination of executive authority and on-the-ground operational mastery to her clients — on her own terms, for those who need the real thing.</p>
       </div>
@@ -700,6 +732,25 @@
           <p>Consulting, training and coaching on her own terms, for clients who need operational depth, not theory.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════ PROFESSIONAL OVERVIEW ═══════════════════ -->
+<section class="overview" id="overview">
+  <div class="section-inner">
+    <div class="section-label">Professional Overview</div>
+    <h2 class="section-title">A strategic, hands-on partner in payments transformation.</h2>
+    <p class="section-desc">Extensive experience in the payments and banking sector — driving transformation across financial institutions' payment ecosystems.</p>
+
+    <div class="overview-body">
+      <p>Over the past several years, I have worked as a consultant supporting banks in shaping and executing payment strategies. My work has spanned the modernisation and implementation of payment applications — including real-time payments, cross-border solutions, and third-party payment provider (TPPP) integrations — enabling institutions to enhance their digital capabilities, improve customer experience, and remain competitive in an evolving financial landscape.</p>
+
+      <h3>Current Engagement</h3>
+      <p>I am currently working with BASA, supporting their members on the payments modernisation journey. This includes contributing to the evolution of payment infrastructure and helping align strategic initiatives toward a future-ready, scalable payments ecosystem — including elements of the cash-to-digital strategy. The work spans the larger payments ecosystem: NPSD, PEM, PAYINC and PASA, alongside banks and fintech players.</p>
+
+      <h3>Leadership &amp; Advisory</h3>
+      <p>In addition to my consulting work, I actively coach and mentor payments executives across the banking sector. This includes working with leaders at Managing Director and executive levels — supporting them in navigating complex transformation programmes, strengthening leadership capability, and delivering impactful outcomes within their organisations.</p>
     </div>
   </div>
 </section>
@@ -759,7 +810,7 @@
 <section class="experience" id="experience">
   <div class="section-inner">
     <div class="section-label">Career Journey</div>
-    <h2 class="section-title">From junior clerk at 18 to executive head of a bank.</h2>
+    <h2 class="section-title">From the ground up to executive head of a bank.</h2>
     <p class="section-desc">A career built entirely on expertise, accountability and deep institutional knowledge.</p>
 
     <div class="timeline">
@@ -779,11 +830,6 @@
       <div class="tl-item">
         <div class="tl-role">Banking Operations</div>
         <div class="tl-meta">First National Bank (FNB)</div>
-      </div>
-      <div class="tl-item">
-        <div class="tl-role">Junior Clerk — Banking Career Begins</div>
-        <div class="tl-meta">Barclays Bank, South Africa <span class="tl-years">Started age 18</span></div>
-        <p class="tl-note">The foundations. A perspective built from the ground up — one that would inform every executive decision for four decades.</p>
       </div>
     </div>
   </div>
