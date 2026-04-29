@@ -865,7 +865,7 @@
       </div>
     </div>
 
-    <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/YOUR_EMAIL_HERE" method="POST">
+    <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/jill@independentjill.co.za" method="POST">
       <input type="hidden" name="_subject" value="New enquiry from independentjill.co.za">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
@@ -918,12 +918,6 @@
     status.className = 'form-status';
     status.textContent = '';
     const action = form.getAttribute('action');
-
-    if (action.includes('YOUR_EMAIL_HERE')) {
-      status.className = 'form-status error';
-      status.textContent = 'Form not yet connected — please email or call directly for now.';
-      return;
-    }
 
     try {
       const data = new FormData(form);
